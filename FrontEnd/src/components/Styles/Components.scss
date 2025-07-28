@@ -1,0 +1,46 @@
+.ModalButton {
+    font-family: 'proxima-nova';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.096px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: none;
+    min-width: 90px;
+}
+
+.clearButton {
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.discardButton {
+    border-color: #3c4043;
+    color: #3c4043;
+    margin-right: 8px;
+    &:hover {
+        border-color: rgb(99, 102, 104);
+    }
+}
+
+.applyButton {
+    background: #3c4043;
+    &:hover {
+        background: rgb(99, 102, 104);
+    }
+}
+
+.dangerButton {
+    background: #c22561;
+    &:hover {
+        background: #ee206f;
+    }
+}
+
+.infoButton {
+    background: #498dbe;
+    &:hover {
+        background: rgb(62, 96, 119);
+    }
+}

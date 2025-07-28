@@ -1,0 +1,207 @@
+$brand-text-color: rgba(60, 64, 67, 1);
+$dim-gray: rgba(113, 113, 113, 1);
+$transparent-alice-blue: rgba(242, 249, 251, 0.65);
+$transparent-black: rgba(0, 0, 0, 0.04);
+$transparent-dark-slate-gray: rgba(60, 64, 67, 0.2);
+$white: rgba(255, 255, 255, 1);
+
+// Typographies
+@mixin proxima-nova-16-bold {
+    font-family: 'proxima-nova';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+@mixin proxima-nova-17-semi-bold {
+    font-family: 'proxima-nova';
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.deprecatedCell {
+    color: red;
+}
+
+.deprecatedCellBG {
+    color: white;
+    background-color: rgb(213, 84, 84);
+    border-radius: 10px;
+}
+
+.searchContainer {
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+
+.customSelect {
+    // background: $transparent-alice-blue;
+    border-radius: 10px 0px 0px 10px;
+    justify-content: space-between;
+    // border-right: 2px solid #3c4043;
+}
+
+.customSelect svg {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    right: 20px;
+}
+
+.searchSelectContent {
+    padding: 16px 19px 18px 34px;
+}
+
+.searchSelectContent:focus {
+    background-color: unset;
+}
+
+.searchSelectContent p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    font-weight: 500;
+    max-width: 85%;
+}
+
+.selectContainer {
+    background-color: var(--selected-color);
+    border-radius: 9px 0 0 9px;
+    max-width: 219px;
+    min-width: 100px;
+}
+
+.searchPersonTypes {
+    display: flex;
+    align-items: center;
+    min-width: 55%;
+    max-height: 57px;
+}
+
+.searchPersonTypesInput {
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.searchPersonTypesInput::placeholder {
+    color: #717171;
+}
+
+.divider {
+    background-color: $brand-text-color;
+}
+
+.searchButton {
+    background: #e03568;
+    border-radius: 0px 9px 9px 0px;
+    max-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.searchButtonContent {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.searchButtonContent:hover {
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.searchButtonIcon {
+    color: transparent;
+    font-size: 27px;
+}
+
+.searchMenuItem {
+    padding-left: 29px;
+}
+
+.searchMenuItem:hover {
+    background: rgba(242, 249, 251, 0.85);
+}
+
+.searchMenuItem p {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.selectedSearchItem {
+    background-color: $transparent-alice-blue !important;
+}
+
+.searchMenuList {
+    padding: 0;
+}
+
+.title {
+    font-family: 'proxima-nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 21px;
+    letter-spacing: -0.18px;
+    color: $brand-text-color;
+    padding-left: 12px;
+}
+
+.searchbarSpacing {
+    padding-left: 10px;
+}
+
+.PersonTypes-searchbar-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.PersonTypes-searchbar-input {
+    width: calc(100% - 50px);
+    margin-left: 0px !important;
+}
+
+.PersonTypes-searchbar-clearButton {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 5;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & svg {
+        position: unset;
+        right: unset;
+        color: #3c4043;
+    }
+}
+
+.columnBlue {
+    background-color: #ebf6f9;
+    font-weight: 'bold';
+}
+
+.MuiDataGrid-scrollbarFiller {
+    background-color: #ebf6f9;
+}
+
+.MuiDataGrid-columnHeaderTitleContainerContent {
+    background-color: #ebf6f9;
+}
+
+.MuiDataGrid-columnHeaderDraggableContainer {
+    background-color: #ebf6f9;
+}
+.MuiDataGrid-columnHeaderCheckbox {
+    background-color: #ebf6f9;
+    font-weight: 'bold';
+}
